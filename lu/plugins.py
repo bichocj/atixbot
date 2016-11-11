@@ -10,7 +10,7 @@ def hi(message):
 
 @respond_to('I love you')
 def love(message):
-    message.reply('I love you too!')
+    message.reply('I love you too Dayi!')
 
 @listen_to('Can someone help me?')
 def help(message):
@@ -19,3 +19,9 @@ def help(message):
 
     # Message is sent on the channel
     # message.send('I can help everybody!')
+
+
+@listen_to('Who I am?')
+def help(message):
+    # Message is replied to the sender (prefixed with @user)
+    message.reply('An Atix Member super saya 3!')
